@@ -26,6 +26,7 @@ var getUserRepos = function (user) {
        if(response.ok) {
        response.json().then(function(data){
            displayRepos(data, user);
+           console.log(data);
        });
     } else {
         alert("Error: GitHub User Not Found");
